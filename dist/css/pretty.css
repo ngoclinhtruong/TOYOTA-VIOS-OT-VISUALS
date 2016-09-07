@@ -288,13 +288,20 @@ body * {
 }
 
 .bg-content {
-	min-height: 538px;
+	min-height: 546px;
 	position: absolute;
 	top: 0;
 	left: 50%;
 	margin-left: -640px;
 	width: 1280px;
 	z-index: 1;
+}
+
+h2,
+h2 span {
+	color: #e7222f;
+	font-family: 'ToyotaText-Bold', sans-serif;
+	text-transform: uppercase;
 }
 
 .home-screen .left-half {
@@ -324,21 +331,18 @@ body * {
 
 .home-screen .content-right {
 	float: right;
-	padding-top: 130px;
+	padding-top: 120px;
 	width: 400px;
 }
 
 .home-screen .content-right h2 {
 	color: #fff;
-	font-weight: bold;
 	font-size: 42px;
-	line-height: 16px;
-	text-transform: uppercase;
 }
 
 .home-screen .content-right h2 span {
-	font: 53px "ToyotaDisplay-Bold", sans-serif;
-	letter-spacing: -3px;
+	color: #fff;
+	font-size: 53px;
 }
 
 .home-screen .content-right p {
@@ -358,11 +362,9 @@ body * {
 
 .key-features h2,
 .key-features h2 span {
-	color: #e7222f;
-	font: 59px 'ToyotaDisplay-Bold', sans-serif;
+	font-size: 59px;
 	letter-spacing: -1px;
 	line-height: 50px;
-	text-transform: uppercase;
 }
 
 .key-features h2 span {
@@ -542,16 +544,11 @@ body * {
 }
 
 .extra-features .intro h2 {
-	color: #e7222f;
-	font-family: 'ToyotaText-Bold', sans-serif;
 	font-size: 40px;
 	line-height: 42px;
-	text-transform: uppercase;
 }
 
 .extra-features .intro h2 span {
-	color: #e7222f;
-	font-family: 'ToyotaText-Bold', sans-serif;	
 	font-size: 53px;
 }
 
@@ -564,3 +561,102 @@ body * {
 	margin-top: 56px;
 }
 
+/******************** Price and Specs ********************/
+.price-specs .left-half {
+  background: url(../images/price/bg-price-repeat1.jpg) repeat-x;
+}
+
+.price-specs .right-half {
+  background: url(../images/price/bg-price-repeat2.jpg) repeat-x;
+}
+
+.price-specs .price-content {
+	background: url(../images/price/bg-price.jpg) no-repeat center top;
+}
+
+.price-specs .container {
+	margin-top: 35px;
+}
+
+.price-specs .content-left {
+	width: 690px;
+}
+
+.price-specs .content-right {
+	width: 300px;
+	height: 190px;
+	overflow: hidden;
+}
+
+.price-specs .button {
+	margin: 410px 0 0 210px;
+}
+
+.price-specs .btn {
+	background: none;
+	border: #fff solid 2px;
+	cursor: pointer;
+	margin-right: 70px;
+	width: 155px;
+	height: 45px;
+}
+
+.price-specs .content-right h2,
+.price-specs .content-right span {
+	font-size: 61px;
+	line-height: 50px;
+	letter-spacing: -1px;
+}
+
+.price-specs .content-right span {
+	font-size: 40px;
+}
+
+.price-specs .content-right p {
+	color: #000;
+	line-height: 18px;
+}
+
+/******************** Register ********************/
+.register .left-half {
+  background: url(../images/register/bg-register-left.jpg) repeat-x;
+}
+
+.register .right-half {
+  background: #e6222e;
+}
+
+.register .register-content {
+	background: url(../images/register/bg-register.jpg) no-repeat center top;
+}
+
+.register .container {
+	margin-top: 35px;
+}
+
+.register .content-left {
+	width: 355px;
+	height: 190px;
+	overflow: hidden;
+}
+
+.register .content-right {
+	width: 645px;
+}
+
+.register .intro {
+	padding-left: 80px;
+}
+
+.register .intro h2 {
+	font-size: 37px;
+}
+
+.register .intro h2 span {
+	font-size: 60px;
+}
+
+.register .intro p {
+	color: #000;
+	line-height: 18px;
+}
