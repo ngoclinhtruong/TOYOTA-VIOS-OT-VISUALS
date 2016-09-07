@@ -1,0 +1,525 @@
+@font-face {
+  font-family: 'ToyotaText';
+  src: url('../fonts/ToyotaText-Regular.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaText-Regular.woff') format('woff'), 
+   		url('../fonts/ToyotaText-Regular.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaText-Regular.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'ToyotaText-Bold';
+  src: url('../fonts/ToyotaText-Bold.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaText-Bold.woff') format('woff'), 
+   		url('../fonts/ToyotaText-Bold.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaText-Bold.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'ToyotaDisplay-Bold';
+  src: url('../fonts/ToyotaDisplay-Bold.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaDisplay-Bold.woff') format('woff'), 
+   		url('../fonts/ToyotaDisplay-Bold.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaDisplay-Bold.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+body * {
+	color: #fff;
+	font-family: 'ToyotaText', Arial, sans-serif;
+	font-size: 14px;
+}
+
+.content {
+	margin: 0 auto;
+	width: 1280px;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************** header ********************/
+#header {
+	background: #eb0a1e;
+	height: 60px;
+	-webkit-box-shadow: 1px 1px 4px #000;
+	-moz-box-shadow:    1px 1px 4px #000;
+	box-shadow:         1px 1px 4px #000;
+	position: relative;
+	z-index: 2;
+}
+
+#logo a {
+	background: url('../images/logo.jpg') no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 71px;
+	height: 60px;
+}
+
+.hamburger {
+	border-right: #c30b16 solid 1px;
+}
+
+.hamburger a {
+	background: #eb0a1e url('../images/hamburger.jpg') center center no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 69px;
+	height: 60px;
+}
+
+.vios-txt {
+	border-right: #c30b16 solid 1px;
+	width: 240px;
+	height: 60px;
+}
+
+.vios-txt label {
+	color: #fff;
+	font-weight: bold;
+	line-height: 60px;
+	padding-left: 20px;
+}
+
+.nav-top li {
+	border-right: #c30b16 solid 1px;
+	display: block;
+	float: left;
+	padding: 0 12px;
+	list-style: none;
+}
+
+.nav-top a {
+	color: #fff;
+	display: block;
+	font-family: "ToyotaText", sans-serif;
+	font-size: 16px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.block-right li {
+	background: #fff;
+	display: block;
+	float: left;
+	list-style: none;
+	height: 60px;
+	padding: 0 10px;
+}
+
+.block-right li:first-child {
+	border-right: #c30b16 solid 1px;
+}
+
+.block-right a {
+	color: #eb0a1e;
+	text-decoration: none;
+	display: block;
+}
+
+.block-right a span {
+	color: #eb0a1e;
+	float: left;
+	display: block;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.block-right .icon {
+	background: url('../images/sprite.png') no-repeat;
+	height: 60px;
+	display: block;
+	float: left;
+}
+
+.block-right .icon-book-drive {
+	background-position: 0 0;
+	width: 22px;
+}
+
+.block-right .icon-locator {
+	background-position: -36px 0;
+	width: 17px;
+}
+/******************** end header ********************/
+
+/******************** footer ********************/
+#footer {
+	background: url('../images/bg-footer.jpg') repeat-x;
+	border: #c30b16 solid 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    width: 100%;
+}
+
+.nav-bottom {
+	margin: 0 auto;
+	width: 1010px;
+}
+
+.nav-bottom li {
+	border-right: #c30b16 solid 1px;
+	display: block;
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 120px
+}
+
+.nav-bottom li:first-child {
+	border-left: #c30b16 solid 1px;
+}
+
+.nav-bottom a {
+	color: #9f9f9f;
+	font: 14px bold ToyotaDisplay, Arial, sans-serif;
+	font-weight: bold;
+	display: block;
+	height: 100px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-bottom a span {
+	color: #9f9f9f;
+	font: 14px bold ToyotaDisplay, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.nav-bottom a .icon {
+	background: url('../images/sprite.png') no-repeat;
+	display: block;
+	margin: 20px auto 0;
+	margin-bottom: 20px;
+}
+
+.nav-bottom a .icon-home {
+	background-position: 0 -80px;
+	width: 23px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-features {
+	background-position: 0 -126px;
+	width: 31px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-extra-features {
+	background-position: 0 -172px;
+	width: 69px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-price {
+	background-position: 0 -226px;
+	width: 15px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-register {
+	background-position: 0 -280px;
+	width: 38px;
+	height: 35px;
+}
+/******************** end footer ********************/
+
+/******************** container ********************/
+
+.tabs li.current{
+	background: #9c0b0f;
+}
+
+.tab-content {
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+.features li.current{
+	background: #9c0b0f;
+}
+
+.features-content {
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+.features-content.current {
+	display: inherit;
+}
+
+
+/******************** home ********************/
+
+.container {
+	margin: 0 auto;
+	width: 990px;
+}
+
+/* Pattern styles */
+.bg-half {
+  float: left;
+  width: 50%;
+  min-height: 546px;
+}
+
+.bg-content {
+	min-height: 538px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -640px;
+	width: 1280px;
+	z-index: 1;
+}
+
+.home-screen .left-half {
+  background: url(../images/home/bg-home-left.jpg) repeat-x;
+}
+
+.home-screen .right-half {
+  background: #e6222e;
+}
+
+.home-screen .home-content {
+	background: url(../images/home/bg-home.jpg) no-repeat center top;
+}
+
+.home-screen .content-left {
+	float: left;
+	padding: 40px 0 0 20px;
+}
+
+.home-screen .content-left .logo-vios {
+	background: url(../images/home/logo.png) no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 166px;
+	height: 43px;
+}
+
+.home-screen .content-right {
+	float: right;
+	padding-top: 130px;
+	width: 400px;
+}
+
+.home-screen .content-right h2 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+.home-screen .content-right h2 span {
+	font: 53px "ToyotaDisplay-Bold", sans-serif;
+	letter-spacing: -3px;
+}
+
+.home-screen .content-right p {
+	line-height: 20px;
+}
+
+
+/******************** Key features ********************/
+.key-features .left-half {
+	background: url(../images/key-features/bg-key-features-repeat1.jpg) repeat-x;
+}
+
+.key-features .right-half {
+  background: url(../images/key-features/bg-key-features-repeat2.png) repeat-x;
+}
+
+
+.key-features h2,
+.key-features h2 span {
+	color: #e7222f;
+	font: 59px 'ToyotaDisplay-Bold', sans-serif;
+	letter-spacing: -1px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.key-features h2 span {
+	font-size: 53px;
+}
+
+.key-features .container {
+	position: relative;
+	width: 1280px;
+}
+
+.key-features .content-left {
+	background: url(../images/key-features/bg-key-features.png) no-repeat center top;
+	width: 100%;
+	position: absolute;
+	z-index: 11;
+	height: 546px;
+}
+
+.key-features .content-right {
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	width: 700px;
+}
+
+.key-features .content-left .intro {
+	line-height: 18px;
+	width: 300px;
+	height: 190px;
+    overflow: hidden;
+}
+
+.key-features .content-left .intro p {
+	color: #000;
+}
+
+.key-features .content-left .features {
+	float: right;
+    width: 450px;
+    padding-right: 140px;
+    height: 110px;
+    position: relative;
+    margin-top: -130px;
+    overflow: hidden;
+}
+
+.key-features .content-left .features p {
+	line-height: 18px;
+}
+
+.features-tabs {
+    width: 490px;
+}
+
+.features-tabs li {
+	cursor: pointer;
+	font-family: "ToyotaText-Bold", sans-serif;
+	list-style: none;
+	height: 53px;
+	line-height: 53px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.key-features .content-right .desc {
+	margin-top: 30px;
+}
+
+.key-features .content-right .desc p {
+	line-height: 16px;
+}
+
+
+.key-features .content-right .img {
+	height: 386px;
+	width: 700px;
+}
+
+.key-features .content-right .img img {
+	max-width: 700px;
+	max-height: 545px;
+}
+
+.key-features .features-article {
+	margin: 38px 0 0 164px;
+}
+
+.key-features .features-link.current {
+	background: #d10509;
+}
+
+.key-features .features-link.current:after {
+	background: url(../images/key-features/tab-active.jpg) no-repeat;
+	content: "";
+	width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 32%;
+}
+
+/******************** Key features ********************/
+.extra-features .bg-content {
+	min-height: 548px;
+}
+
+.extra-features .left-half {
+	background: #e7222f;
+}
+
+.extra-features .right-half {
+  background: url(../images/extra/bg-extra-repeat.jpg) repeat-x;
+}
+
+.extra-features .extra-content {
+	background: url(../images/extra/bg-extra.jpg) no-repeat center top;
+}
+
+.extra-features li {
+	float: left;
+	display: table;
+	margin-bottom: 10px;
+	width: 400px;
+}
+
+.extra-features .img {
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+	width: 71px;
+	height: 71px;
+}
+
+.extra-features .img-frame {
+	background: url(../images/extra/img-frame.png) no-repeat;
+	position: absolute;
+    z-index: 2;
+    width: 71px;
+    height: 71px;
+}
+
+.extra-features img {
+	position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.extra-features .title {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 18px;
+}
+
+.extra-features .title p {
+	font: 16px 'ToyotaText-Bold', sans-serif;
+	text-transform: uppercase;
+}
+
