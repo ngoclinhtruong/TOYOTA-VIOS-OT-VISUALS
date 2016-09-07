@@ -641,7 +641,7 @@ h2 span {
 }
 
 .register .content-right {
-	width: 645px;
+	width: 635px;
 }
 
 .register .intro {
@@ -659,4 +659,138 @@ h2 span {
 .register .intro p {
 	color: #000;
 	line-height: 18px;
+}
+
+/* Register form */
+.SectionRegister {
+	margin: 100px 0 0 0;
+}
+
+.SectionRegister .FortunerFormWrapper .control-label {
+	float: left;
+}
+
+.SectionRegister .FortunerFormWrapper .form-group {
+	margin-bottom: 20px;
+}
+.SectionRegister .FortunerFormWrapper .form-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.SectionRegister .FortunerFormWrapper label {
+	font: 15px/30px Arial, sans-serif;
+    color: #fff;
+	padding: 0;
+	text-align: right;
+	width: 120px;
+}
+
+.SectionRegister .FortunerFormWrapper .input-width-1 {
+	padding-left: 25px;
+	width: 490px;
+}
+
+.SectionRegister .FortunerFormWrapper .input-width-2 {
+	padding-left: 25px;
+	width: 95px;
+}
+
+.SectionRegister .FortunerFormWrapper .input-width-3 {
+	padding-left: 13px;
+	width: 380px;
+}
+
+.SectionRegister .FortunerFormWrapper .form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ee7e83;
+    background-color: #fff;
+    background-image: none;
+    border: 0;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 2px 2px 7px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 7px 0px rgba(0,0,0,0.2);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.SectionRegister .FortunerFormWrapper .form-control:focus {
+	outline: none;
+}
+
+.SectionRegister .FortunerFormWrapper select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/down-select.png') no-repeat right center;
+    text-indent: 0.01px;
+    text-overflow: "";
+    border-radius: 15px;
+    padding-right: 35px;
+}
+
+.SectionRegister .FortunerFormWrapper select.form-control option {
+	color: #ee7e83;
+}
+
+.SectionRegister .FortunerFormWrapper .checkbox {
+	padding-top: 0;
+	margin-left: 144px;
+}
+
+.SectionRegister .FortunerFormWrapper .checkbox input {
+    margin: 0;
+    font-size: 14px;
+    position: absolute;
+}
+
+.SectionRegister .FortunerFormWrapper .checkbox label {
+    text-align: left;
+    padding: 0 0 0 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 14px;
+    display: inline-block;
+    width: auto;
+}
+
+.SectionRegister .FortunerFormWrapper .btn-submit {
+	margin-left: 140px;
+}
+
+.SectionRegister .FortunerFormWrapper .FormButton {
+	background: none;
+	border: #fff solid 2px;
+    padding: 5px 25px;
+	width: 155px;
+	height: 45px;
+}
+
+.SectionRegister .FortunerFormWrapper .EditingFormErrorLabel {
+	color: #fff;
+	font-size: 12px;
+    font-family: Arial, sans-serif;
+	text-align: left;
+	display: block;
+	margin-left: 150px;
+}
+
+.SectionRegister .disclaimer {
+	font-size: 12px;
+    font-family: Arial, sans-serif;
+    padding: 15px 0 0 160px;
+}
+
+.ErrorLabel {
+	display: none;
 }
