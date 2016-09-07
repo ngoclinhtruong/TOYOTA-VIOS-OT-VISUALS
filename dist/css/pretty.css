@@ -64,6 +64,12 @@ body * {
 	z-index: 2;
 }
 
+#logo {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
 #logo a {
 	background: url('../images/logo.jpg') no-repeat;
 	display: block;
@@ -74,6 +80,9 @@ body * {
 
 .hamburger {
 	border-right: #c30b16 solid 1px;
+	position: absolute;
+    left: 71px;
+    top: 0;
 }
 
 .hamburger a {
@@ -85,16 +94,21 @@ body * {
 }
 
 .vios-txt {
-	border-right: #c30b16 solid 1px;
-	width: 240px;
 	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 138px;
 }
 
 .vios-txt label {
 	color: #fff;
-	font-weight: bold;
-	line-height: 60px;
+	font: 16px/60px 'ToyotaText-Bold', sans-serif;
 	padding-left: 20px;
+}
+
+.nav-top {
+    width: 590px;
+    margin: 0 auto;
 }
 
 .nav-top li {
@@ -105,6 +119,10 @@ body * {
 	list-style: none;
 }
 
+.nav-top li:first-child {
+	border-left: #c30b16 solid 1px;
+}
+
 .nav-top a {
 	color: #fff;
 	display: block;
@@ -112,6 +130,12 @@ body * {
 	font-size: 16px;
 	line-height: 60px;
 	text-decoration: none;
+}
+
+.block-right {
+	position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .block-right li {
@@ -246,6 +270,14 @@ body * {
 
 .tabs li.current{
 	background: #9c0b0f;
+}
+
+.tabs li:hover {
+	background: #9c0b0f;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    transition: ease .3s;
 }
 
 .tab-content {
@@ -778,11 +810,17 @@ h2 span {
 
 .SectionRegister .FortunerFormWrapper .EditingFormErrorLabel {
 	color: #fff;
-	font-size: 12px;
+	font-size: 11px;
     font-family: Arial, sans-serif;
 	text-align: left;
 	display: block;
 	margin-left: 150px;
+	position: absolute;
+    margin-top: 33px;
+}
+
+.SectionRegister .FortunerFormWrapper .input-width-3 + .EditingFormErrorLabel {
+	margin-left: 265px;
 }
 
 .SectionRegister .disclaimer {
