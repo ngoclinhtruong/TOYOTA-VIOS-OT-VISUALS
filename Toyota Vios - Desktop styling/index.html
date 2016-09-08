@@ -12,31 +12,32 @@
     <script src="dist/js/script.js"></script>
 </head>
 
-<body>
+<body class="whole-content">
     <header id="header">
     	<div class="content clearfix">
-        	<div id="logo" class="fl">
+        	<div id="logo">
                 <a href="#" title="Toyota Vios">Toyota Vios</a>
             </div>
 
-            <div class="hamburger fl">
+            <div class="hamburger">
                 <a href="#" title="Hamburger">Hamburger</a>
             </div>
 
-            <div class="vios-txt fl">
+            <div class="vios-txt">
                 <label>Vios</label>
             </div>
 
-            <nav class="nav-top fl">
+            <nav class="nav-top">
                 <ul class="tabs">
-                    <li class="tab-link current" data-tab="tab-2"><a href="#">Key Features</a></li>
+                    <li class="current"></li>
+                    <li class="tab-link" data-tab="tab-2"><a href="#">Key Features</a></li>
                     <li class="tab-link" data-tab="tab-3"><a href="#">Extra Excitement</a></li>
                     <li class="tab-link" data-tab="tab-4"><a href="#">Price & Specs</a></li>
                     <li class="tab-link" data-tab="tab-5"><a href="#">Register Your interest</a></li>
                 </ul>
             </nav>
 
-            <div class="block-right fr">
+            <div class="block-right">
                 <ul>
                     <li><a href="#" class="book-drive"><i class="icon icon-book-drive"></i> <span>Book a </br>Test Drive</span></a></li>
                     <li><a href="#" class="locator"><i class="icon icon-locator"></i> <span>Sales & </br>Service Locator</span></a></li>
@@ -45,9 +46,9 @@
         </div>
     </header>
     
-    <section>
+    <section class="body-content">
         <!--- Home screen -->
-        <div id="tab-1" class="tab-content">
+        <div id="tab-1" class="tab-content current">
             <div class="home-screen">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
@@ -328,7 +329,7 @@
 
 
         <!--- Register Your Interest -->
-        <div id="tab-5" class="tab-content current">
+        <div id="tab-5" class="tab-content">
             <div class="register">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
@@ -352,64 +353,40 @@
                                 <div class="ViosFormWrapper">
                                     <div class="form-group">
                                         <label class="control-label" for="inputName">*Name</label>
-                                        <div class="fl input-width-1">
-                                            <input type="text" name="" class="form-control">
-                                        </div>
+                                        <div class="fl input-width-1">$$input:Name$$ $$validation:Name$$</div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label" for="inputPhone">*Phone</label>
-                                        <div class="fl input-width-2">
-                                            <select class="DropDownField form-control">
-                                                <option> aaa aaa aaaaaaaaa</option>
-                                                <option>dad</option>
-                                                <option>dad</option>
-                                            </select>
-                                        </div>
-                                        <div class="fl input-width-3"><input type="text" name="" class="form-control"></div>
+                                        <div class="fl input-width-2">$$input:PhonePrefix$$ $$validation:PhonePrefix$$</div>
+                                        <div class="fl input-width-3">$$input:PhonoNo$$ $$validation:PhonoNo$$</div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label" for="inputEmail">*Email</label>
 
-                                        <div class="fl input-width-1"><input type="text" name="" class="form-control"></div>
+                                        <div class="fl input-width-1">$$input:Email$$ $$validation:Email$$</div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label" for="inputState">*State</label>
-                                        <div class="fl input-width-1">
-                                            <select class="DropDownField form-control">
-                                                <option>dad</option>
-                                                <option>dad</option>
-                                                <option>dad</option>
-                                            </select>
-                                        </div>
+                                        <div class="fl input-width-1">$$input:State$$ $$validation:State$$</div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label" for="inputBranch">*Preferred Branch</label>
-                                        <div class="fl input-width-1">
-                                            <select class="DropDownField form-control">
-                                                <option>asa</option>
-                                                <option>dad</option>
-                                                <option>dad</option>
-                                            </select>
-                                        </div>
+                                        <div class="fl input-width-1">$$input:PreferredBranch$$ $$validation:PreferredBranch$$</div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="">
-                                                <label for="">I hereby confirm that I have read UMWT’s Personal Data Protection Notice (“PDP Notice”) and consent to UMWT processing my personal data according to the PDP Notice.</label>
-                                            </div>
+                                            <div class="checkbox">$$input:Policy$$ $$validation:Policy$$</div>
                                             <p class="disclaimer">*Required fields</p>
                                         </div>
                                     </div>
 
                                     <div class="form-group btn-submit">
-                                        <div class="">​</div>
-                                        <input type="submit" name="p$lt$ctl07$pageplaceholder$p$lt$ctl01$On_lineForm$viewBiz$btnOK" value="Submit" id="p_lt_ctl07_pageplaceholder_p_lt_ctl01_On_lineForm_viewBiz_btnOK" class="FormButton btn btn-primary">
+                                        <div class="">​$$submitbutton$$</div>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +402,7 @@
     
     <footer id="footer">
     	<div class="content">
-            <nav class="nav-bottom clearfix">
+            <nav class="nav-bottom">
                 <ul class="tabs">
                     <li class="tab-link current" data-tab="tab-1"><a href="#"><i class="icon icon-home"></i> <span>Home</span></a></li>
                     <li class="tab-link" data-tab="tab-2"><a href="#"><i class="icon icon-features"></i> <span>Key features</span></a></li>

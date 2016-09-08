@@ -28,6 +28,11 @@
  font-style: normal;
 }
 
+body {
+	
+	min-height: 728px;
+}
+
 body * {
 	color: #fff;
 	font-family: 'ToyotaText', Arial, sans-serif;
@@ -107,8 +112,11 @@ body * {
 }
 
 .nav-top {
-    width: 590px;
-    margin: 0 auto;
+    height: 60px;
+    max-width: 590px;
+    position: absolute;
+    right: 50%;
+    margin-right: -250px;
 }
 
 .nav-top li {
@@ -120,6 +128,10 @@ body * {
 }
 
 .nav-top li:first-child {
+	display: none;
+}
+
+.nav-top li:nth-child(2) {
 	border-left: #c30b16 solid 1px;
 }
 
@@ -192,11 +204,18 @@ body * {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
 }
 
 .nav-bottom {
-	margin: 0 auto;
-	width: 1010px;
+	position: absolute;
+    width: 1010px;
+    height: 100px;
+    left: 50%;
+    margin-left: -505px;
 }
 
 .nav-bottom li {
@@ -210,6 +229,11 @@ body * {
 
 .nav-bottom li:first-child {
 	border-left: #c30b16 solid 1px;
+}
+
+.nav-bottom .tabs li.current,
+.nav-bottom .tabs li:hover {
+	background: url(../images/nav-bottom-hover.jpg) no-repeat;
 }
 
 .nav-bottom a {
@@ -267,6 +291,14 @@ body * {
 /******************** end footer ********************/
 
 /******************** container ********************/
+.whole-body {
+
+}
+
+.body-content {
+	position: relative;
+	z-index: 3;
+}
 
 .tabs li.current{
 	background: #9c0b0f;
@@ -380,6 +412,7 @@ h2 span {
 .home-screen .content-right p {
 	line-height: 20px;
 }
+
 
 
 /******************** Key features ********************/
@@ -698,20 +731,20 @@ h2 span {
 	margin: 100px 0 0 0;
 }
 
-.SectionRegister .FortunerFormWrapper .control-label {
+.SectionRegister .ViosFormWrapper .control-label {
 	float: left;
 }
 
-.SectionRegister .FortunerFormWrapper .form-group {
+.SectionRegister .ViosFormWrapper .form-group {
 	margin-bottom: 20px;
 }
-.SectionRegister .FortunerFormWrapper .form-group:after {
+.SectionRegister .ViosFormWrapper .form-group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.SectionRegister .FortunerFormWrapper label {
+.SectionRegister .ViosFormWrapper label {
 	font: 15px/30px Arial, sans-serif;
     color: #fff;
 	padding: 0;
@@ -719,22 +752,22 @@ h2 span {
 	width: 120px;
 }
 
-.SectionRegister .FortunerFormWrapper .input-width-1 {
+.SectionRegister .ViosFormWrapper .input-width-1 {
 	padding-left: 25px;
 	width: 490px;
 }
 
-.SectionRegister .FortunerFormWrapper .input-width-2 {
+.SectionRegister .ViosFormWrapper .input-width-2 {
 	padding-left: 25px;
 	width: 95px;
 }
 
-.SectionRegister .FortunerFormWrapper .input-width-3 {
+.SectionRegister .ViosFormWrapper .input-width-3 {
 	padding-left: 13px;
 	width: 380px;
 }
 
-.SectionRegister .FortunerFormWrapper .form-control {
+.SectionRegister .ViosFormWrapper .form-control {
     display: block;
     width: 100%;
     height: 30px;
@@ -755,11 +788,11 @@ h2 span {
     -moz-box-sizing: border-box;
 }
 
-.SectionRegister .FortunerFormWrapper .form-control:focus {
+.SectionRegister .ViosFormWrapper .form-control:focus {
 	outline: none;
 }
 
-.SectionRegister .FortunerFormWrapper select.form-control {
+.SectionRegister .ViosFormWrapper select.form-control {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -770,22 +803,22 @@ h2 span {
     padding-right: 35px;
 }
 
-.SectionRegister .FortunerFormWrapper select.form-control option {
+.SectionRegister .ViosFormWrapper select.form-control option {
 	color: #ee7e83;
 }
 
-.SectionRegister .FortunerFormWrapper .checkbox {
+.SectionRegister .ViosFormWrapper .checkbox {
 	padding-top: 0;
 	margin-left: 144px;
 }
 
-.SectionRegister .FortunerFormWrapper .checkbox input {
+.SectionRegister .ViosFormWrapper .checkbox input {
     margin: 0;
     font-size: 14px;
     position: absolute;
 }
 
-.SectionRegister .FortunerFormWrapper .checkbox label {
+.SectionRegister .ViosFormWrapper .checkbox label {
     text-align: left;
     padding: 0 0 0 20px;
     color: #fff;
@@ -796,11 +829,11 @@ h2 span {
     width: auto;
 }
 
-.SectionRegister .FortunerFormWrapper .btn-submit {
+.SectionRegister .ViosFormWrapper .btn-submit {
 	margin-left: 140px;
 }
 
-.SectionRegister .FortunerFormWrapper .FormButton {
+.SectionRegister .ViosFormWrapper .FormButton {
 	background: none;
 	border: #fff solid 2px;
     padding: 5px 25px;
@@ -808,7 +841,7 @@ h2 span {
 	height: 45px;
 }
 
-.SectionRegister .FortunerFormWrapper .EditingFormErrorLabel {
+.SectionRegister .ViosFormWrapper .EditingFormErrorLabel {
 	color: #fff;
 	font-size: 11px;
     font-family: Arial, sans-serif;
@@ -819,7 +852,7 @@ h2 span {
     margin-top: 33px;
 }
 
-.SectionRegister .FortunerFormWrapper .input-width-3 + .EditingFormErrorLabel {
+.SectionRegister .ViosFormWrapper .input-width-3 + .EditingFormErrorLabel {
 	margin-left: 265px;
 }
 

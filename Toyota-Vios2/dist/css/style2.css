@@ -1,0 +1,867 @@
+@font-face {
+  font-family: 'ToyotaText';
+  src: url('../fonts/ToyotaText-Regular.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaText-Regular.woff') format('woff'), 
+   		url('../fonts/ToyotaText-Regular.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaText-Regular.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'ToyotaText-Bold';
+  src: url('../fonts/ToyotaText-Bold.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaText-Bold.woff') format('woff'), 
+   		url('../fonts/ToyotaText-Bold.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaText-Bold.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'ToyotaDisplay-Bold';
+  src: url('../fonts/ToyotaDisplay-Bold.eot?#iefix') format('embedded-opentype'), 
+  		url('../fonts/ToyotaDisplay-Bold.woff') format('woff'), 
+   		url('../fonts/ToyotaDisplay-Bold.ttf')  format('truetype'), 
+   		url('../fonts/ToyotaDisplay-Bold.svg#ToyotaDisplay-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+body {
+	
+	min-height: 728px;
+}
+
+body * {
+	color: #fff;
+	font-family: 'ToyotaText', Arial, sans-serif;
+	font-size: 14px;
+}
+
+.content {
+	margin: 0 auto;
+	width: 1280px;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************** header ********************/
+#header {
+	background: #eb0a1e;
+	height: 60px;
+	-webkit-box-shadow: 1px 1px 4px #000;
+	-moz-box-shadow:    1px 1px 4px #000;
+	box-shadow:         1px 1px 4px #000;
+	position: relative;
+	z-index: 2;
+}
+
+#logo {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo a {
+	background: url('../images/logo.jpg') no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 71px;
+	height: 60px;
+}
+
+.hamburger {
+	border-right: #c30b16 solid 1px;
+	position: absolute;
+    left: 71px;
+    top: 0;
+}
+
+.hamburger a {
+	background: #eb0a1e url('../images/hamburger.jpg') center center no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 69px;
+	height: 60px;
+}
+
+.vios-txt {
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 138px;
+}
+
+.vios-txt label {
+	color: #fff;
+	font: 16px/60px 'ToyotaText-Bold', sans-serif;
+	padding-left: 20px;
+}
+
+.nav-top {
+    height: 60px;
+    max-width: 590px;
+    position: absolute;
+    right: 50%;
+    margin-right: -250px;
+}
+
+.nav-top li {
+	border-right: #c30b16 solid 1px;
+	display: block;
+	float: left;
+	padding: 0 12px;
+	list-style: none;
+}
+
+.nav-top li:first-child {
+	display: none;
+}
+
+.nav-top li:nth-child(2) {
+	border-left: #c30b16 solid 1px;
+}
+
+.nav-top a {
+	color: #fff;
+	display: block;
+	font-family: "ToyotaText", sans-serif;
+	font-size: 16px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.block-right {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.block-right li {
+	background: #fff;
+	display: block;
+	float: left;
+	list-style: none;
+	height: 60px;
+	padding: 0 10px;
+}
+
+.block-right li:first-child {
+	border-right: #c30b16 solid 1px;
+}
+
+.block-right a {
+	color: #eb0a1e;
+	text-decoration: none;
+	display: block;
+}
+
+.block-right a span {
+	color: #eb0a1e;
+	float: left;
+	display: block;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.block-right .icon {
+	background: url('../images/sprite.png') no-repeat;
+	height: 60px;
+	display: block;
+	float: left;
+}
+
+.block-right .icon-book-drive {
+	background-position: 0 0;
+	width: 22px;
+}
+
+.block-right .icon-locator {
+	background-position: -36px 0;
+	width: 17px;
+}
+/******************** end header ********************/
+
+/******************** footer ********************/
+#footer {
+	background: url('../images/bg-footer.jpg') repeat-x;
+	border: #c30b16 solid 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+}
+
+.nav-bottom {
+	position: absolute;
+    width: 1010px;
+    height: 100px;
+    left: 50%;
+    margin-left: -505px;
+}
+
+.nav-bottom li {
+	border-right: #c30b16 solid 1px;
+	display: block;
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 120px
+}
+
+.nav-bottom li:first-child {
+	border-left: #c30b16 solid 1px;
+}
+
+.nav-bottom .tabs li.current,
+.nav-bottom .tabs li:hover {
+	background: url(../images/nav-bottom-hover.jpg) no-repeat;
+}
+
+.nav-bottom a {
+	color: #9f9f9f;
+	font: 14px bold ToyotaDisplay, Arial, sans-serif;
+	font-weight: bold;
+	display: block;
+	height: 100px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-bottom a span {
+	color: #9f9f9f;
+	font: 14px bold ToyotaDisplay, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.nav-bottom a .icon {
+	background: url('../images/sprite.png') no-repeat;
+	display: block;
+	margin: 20px auto 0;
+	margin-bottom: 20px;
+}
+
+.nav-bottom a .icon-home {
+	background-position: 0 -80px;
+	width: 23px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-features {
+	background-position: 0 -126px;
+	width: 31px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-extra-features {
+	background-position: 0 -172px;
+	width: 69px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-price {
+	background-position: 0 -226px;
+	width: 15px;
+	height: 31px;
+}
+
+.nav-bottom a .icon-register {
+	background-position: 0 -280px;
+	width: 38px;
+	height: 35px;
+}
+/******************** end footer ********************/
+
+/******************** container ********************/
+.whole-body {
+
+}
+
+.body-content {
+	position: relative;
+	z-index: 3;
+}
+
+.tabs li.current{
+	background: #9c0b0f;
+}
+
+.tabs li:hover {
+	background: #9c0b0f;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.tab-content {
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+.features li.current{
+	background: #9c0b0f;
+}
+
+.features-content {
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+.features-content.current {
+	display: inherit;
+}
+
+
+/******************** home ********************/
+
+.container {
+	margin: 0 auto;
+	width: 990px;
+}
+
+/* Pattern styles */
+.bg-half {
+  float: left;
+  width: 50%;
+  min-height: 546px;
+}
+
+.bg-content {
+	min-height: 546px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -640px;
+	width: 1280px;
+	z-index: 1;
+}
+
+h2,
+h2 span {
+	color: #e7222f;
+	font-family: 'ToyotaText-Bold', sans-serif;
+	text-transform: uppercase;
+}
+
+.home-screen .left-half {
+  background: url(../images/home/bg-home-left.jpg) repeat-x;
+}
+
+.home-screen .right-half {
+  background: #e6222e;
+}
+
+.home-screen .home-content {
+	background: url(../images/home/bg-home.jpg) no-repeat center top;
+}
+
+.home-screen .content-left {
+	float: left;
+	padding: 40px 0 0 20px;
+}
+
+.home-screen .content-left .logo-vios {
+	background: url(../images/home/logo.png) no-repeat;
+	display: block;
+	text-indent: -999em;
+	width: 166px;
+	height: 43px;
+}
+
+.home-screen .content-right {
+	float: right;
+	padding-top: 120px;
+	width: 400px;
+}
+
+.home-screen .content-right h2 {
+	color: #fff;
+	font-size: 42px;
+}
+
+.home-screen .content-right h2 span {
+	color: #fff;
+	font-size: 53px;
+}
+
+.home-screen .content-right p {
+	line-height: 20px;
+}
+
+
+
+/******************** Key features ********************/
+.key-features .left-half {
+	background: url(../images/key-features/bg-key-features-repeat1.jpg) repeat-x;
+}
+
+.key-features .right-half {
+  background: url(../images/key-features/bg-key-features-repeat2.png) repeat-x;
+}
+
+
+.key-features h2,
+.key-features h2 span {
+	font-size: 59px;
+	letter-spacing: -1px;
+	line-height: 50px;
+}
+
+.key-features h2 span {
+	font-size: 53px;
+}
+
+.key-features .container {
+	position: relative;
+	width: 1280px;
+}
+
+.key-features .content-left {
+	background: url(../images/key-features/bg-key-features.png) no-repeat center top;
+	width: 100%;
+	position: absolute;
+	z-index: 11;
+	height: 546px;
+}
+
+.key-features .content-right {
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	width: 700px;
+}
+
+.key-features .content-left .intro {
+	line-height: 18px;
+	width: 300px;
+	height: 190px;
+    overflow: hidden;
+}
+
+.key-features .content-left .intro p {
+	color: #000;
+}
+
+.key-features .content-left .features {
+	float: right;
+    width: 450px;
+    padding-right: 140px;
+    height: 110px;
+    position: relative;
+    margin-top: -130px;
+    overflow: hidden;
+}
+
+.key-features .content-left .features p {
+	line-height: 18px;
+}
+
+.features-tabs {
+    width: 490px;
+}
+
+.features-tabs li {
+	cursor: pointer;
+	font-family: "ToyotaText-Bold", sans-serif;
+	list-style: none;
+	height: 53px;
+	line-height: 53px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.key-features .content-right .desc {
+	margin-top: 30px;
+}
+
+.key-features .content-right .desc p {
+	line-height: 16px;
+}
+
+
+.key-features .content-right .img {
+	height: 386px;
+	width: 700px;
+}
+
+.key-features .content-right .img img {
+	max-width: 700px;
+	max-height: 545px;
+}
+
+.key-features .features-article {
+	margin: 38px 0 0 164px;
+}
+
+.key-features .features-link.current:after {
+	background: url(../images/key-features/tab-active.jpg) no-repeat;
+	content: "";
+	width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 32%;
+}
+
+/******************** Key features ********************/
+.extra-features .bg-content {
+	min-height: 548px;
+}
+
+.extra-features .left-half {
+	background: #e7222f;
+}
+
+.extra-features .right-half {
+  background: url(../images/extra/bg-extra-repeat.jpg) repeat-x;
+}
+
+.extra-features .extra-content {
+	background: url(../images/extra/bg-extra.jpg) no-repeat center top;
+}
+
+.extra-features li {
+	display: table;
+	table-layout: fixed;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+	width: 400px;
+}
+
+.extra-features .img {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 71px;
+	height: 71px;
+}
+
+.extra-features .img-frame {
+	background: url(../images/extra/img-frame.png) no-repeat;
+	position: absolute;
+    z-index: 2;
+    width: 71px;
+    height: 71px;
+}
+
+.extra-features img {
+	position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.extra-features .title {
+	vertical-align: middle;
+	padding-left: 18px;
+	float: left;
+}
+
+.extra-features .title p {
+	font: 16px 'ToyotaText-Bold', sans-serif;
+	line-height: 71px;
+	text-transform: uppercase;
+}
+
+.extra-features .container {
+	margin-top: 40px;
+}
+
+.extra-features .content-left {
+	margin-left: 20px;
+	width: 400px;
+}
+
+.extra-features .content-right {
+	width: 500px;
+}
+
+.extra-features .intro {
+	height: 188px;
+	overflow: hidden;
+    padding-left: 140px;
+    text-align: right;
+}
+
+.extra-features .intro h2 {
+	font-size: 40px;
+	line-height: 42px;
+}
+
+.extra-features .intro h2 span {
+	font-size: 53px;
+}
+
+.extra-features .intro p {
+	color: #000;
+	line-height: 20px;
+}
+
+.extra-features .content-right  .list-equipment {
+	margin-top: 56px;
+}
+
+/******************** Price and Specs ********************/
+.price-specs .left-half {
+  background: url(../images/price/bg-price-repeat1.jpg) repeat-x;
+}
+
+.price-specs .right-half {
+  background: url(../images/price/bg-price-repeat2.jpg) repeat-x;
+}
+
+.price-specs .price-content {
+	background: url(../images/price/bg-price.jpg) no-repeat center top;
+}
+
+.price-specs .container {
+	margin-top: 35px;
+}
+
+.price-specs .content-left {
+	width: 690px;
+}
+
+.price-specs .content-right {
+	width: 300px;
+	height: 190px;
+	overflow: hidden;
+}
+
+.price-specs .button {
+	margin: 410px 0 0 210px;
+}
+
+.price-specs .btn {
+	background: none;
+	border: #fff solid 2px;
+	cursor: pointer;
+	margin-right: 70px;
+	width: 155px;
+	height: 45px;
+}
+
+.price-specs .content-right h2,
+.price-specs .content-right span {
+	font-size: 61px;
+	line-height: 50px;
+	letter-spacing: -1px;
+}
+
+.price-specs .content-right span {
+	font-size: 40px;
+}
+
+.price-specs .content-right p {
+	color: #000;
+	line-height: 18px;
+}
+
+/******************** Register ********************/
+.register .left-half {
+  background: url(../images/register/bg-register-left.jpg) repeat-x;
+}
+
+.register .right-half {
+  background: #e6222e;
+}
+
+.register .register-content {
+	background: url(../images/register/bg-register.jpg) no-repeat center top;
+}
+
+.register .container {
+	margin-top: 35px;
+}
+
+.register .content-left {
+	width: 355px;
+	height: 190px;
+	overflow: hidden;
+}
+
+.register .content-right {
+	width: 635px;
+}
+
+.register .intro {
+	padding-left: 80px;
+}
+
+.register .intro h2 {
+	font-size: 37px;
+}
+
+.register .intro h2 span {
+	font-size: 60px;
+}
+
+.register .intro p {
+	color: #000;
+	line-height: 18px;
+}
+
+/* Register form */
+.SectionRegister {
+	margin: 100px 0 0 0;
+}
+
+.SectionRegister .ViosFormWrapper .control-label {
+	float: left;
+}
+
+.SectionRegister .ViosFormWrapper .form-group {
+	margin-bottom: 20px;
+}
+.SectionRegister .ViosFormWrapper .form-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.SectionRegister .ViosFormWrapper label {
+	font: 15px/30px Arial, sans-serif;
+    color: #fff;
+	padding: 0;
+	text-align: right;
+	width: 120px;
+}
+
+.SectionRegister .ViosFormWrapper .input-width-1 {
+	padding-left: 25px;
+	width: 490px;
+}
+
+.SectionRegister .ViosFormWrapper .input-width-2 {
+	padding-left: 25px;
+	width: 95px;
+}
+
+.SectionRegister .ViosFormWrapper .input-width-3 {
+	padding-left: 13px;
+	width: 380px;
+}
+
+.SectionRegister .ViosFormWrapper .form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ee7e83;
+    background-color: #fff;
+    background-image: none;
+    border: 0;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 2px 2px 7px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 7px 0px rgba(0,0,0,0.2);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.SectionRegister .ViosFormWrapper .form-control:focus {
+	outline: none;
+}
+
+.SectionRegister .ViosFormWrapper select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/down-select.png') no-repeat right center;
+    text-indent: 0.01px;
+    text-overflow: "";
+    border-radius: 15px;
+    padding-right: 35px;
+}
+
+.SectionRegister .ViosFormWrapper select.form-control option {
+	color: #ee7e83;
+}
+
+.SectionRegister .ViosFormWrapper .checkbox {
+	padding-top: 0;
+	margin-left: 144px;
+}
+
+.SectionRegister .ViosFormWrapper .checkbox input {
+    margin: 0;
+    font-size: 14px;
+    position: absolute;
+}
+
+.SectionRegister .ViosFormWrapper .checkbox label {
+    text-align: left;
+    padding: 0 0 0 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 14px;
+    display: inline-block;
+    width: auto;
+}
+
+.SectionRegister .ViosFormWrapper .btn-submit {
+	margin-left: 140px;
+}
+
+.SectionRegister .ViosFormWrapper .FormButton {
+	background: none;
+	border: #fff solid 2px;
+    padding: 5px 25px;
+	width: 155px;
+	height: 45px;
+}
+
+.SectionRegister .ViosFormWrapper .EditingFormErrorLabel {
+	color: #fff;
+	font-size: 11px;
+    font-family: Arial, sans-serif;
+	text-align: left;
+	display: block;
+	margin-left: 150px;
+	position: absolute;
+    margin-top: 33px;
+}
+
+.SectionRegister .ViosFormWrapper .input-width-3 + .EditingFormErrorLabel {
+	margin-left: 265px;
+}
+
+.SectionRegister .disclaimer {
+	font-size: 12px;
+    font-family: Arial, sans-serif;
+    padding: 15px 0 0 160px;
+}
+
+.ErrorLabel {
+	display: none;
+}

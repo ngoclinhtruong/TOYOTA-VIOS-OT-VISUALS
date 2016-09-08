@@ -6,11 +6,12 @@
     <title>Toyota Vios</title>
 
     <link rel="stylesheet" href="dist/css/reset.css">
-    <link rel="stylesheet" href="dist/css/pretty.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
     <script src="dist/js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="dist/js/magic.js"></script>
+    <script src="dist/js/script.js"></script>
+
+
 </head>
 
 <body>
@@ -30,7 +31,8 @@
 
             <nav class="nav-top">
                 <ul class="tabs">
-                    <li class="tab-link current" data-tab="tab-2"><a href="#">Key Features</a></li>
+                    <li class="current"></li>
+                    <li class="tab-link" data-tab="tab-2"><a href="#">Key Features</a></li>
                     <li class="tab-link" data-tab="tab-3"><a href="#">Extra Excitement</a></li>
                     <li class="tab-link" data-tab="tab-4"><a href="#">Price & Specs</a></li>
                     <li class="tab-link" data-tab="tab-5"><a href="#">Register Your interest</a></li>
@@ -46,19 +48,19 @@
         </div>
     </header>
     
-    <section>
+    <section class="body-content">
         <!--- Home screen -->
         <div id="tab-1" class="tab-content current">
-            <div class="home-screen">
-                <div class="clearfix">
-                    <div class="bg-half left-half"></div>
-                    <div class="bg-half right-half"></div>
-                </div>
+            <div id="bg-home">
+                <img src="dist/images/home/bg-home.jpg" alt=""/>
+            </div>
 
-                <div class="bg-content home-content">
+            <div class="home-screen">
+                <div class="bg-content">
                     <div class="container clearfix">
                         <div class="content-left">
                             <h1><a href="#" title="Vios" class="logo-vios">New Vios</a></h1>
+                            <div class="img"><img src="dist/images/home/car.png" alt=""/></div>
                         </div>
 
                         <div class="content-right">
@@ -75,7 +77,7 @@
 
         <!--- Key features -->
         <div id="tab-2" class="tab-content">
-            <div class="key-features">
+            <div class="key-features bg-red">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
                     <div class="bg-half right-half"></div>
@@ -179,8 +181,8 @@
 
 
         <!--- Extra features -->
-        <div id="tab-3" class="tab-content">
-            <div class="extra-features">
+        <div id="tab-3" class="tab-content ">
+            <div class="extra-features bg-red">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
                     <div class="bg-half right-half"></div>
@@ -301,7 +303,7 @@
 
         <!--- Price and Specification -->
         <div id="tab-4" class="tab-content">
-            <div class="price-specs">
+            <div class="price-specs bg-red">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
                     <div class="bg-half right-half"></div>
@@ -330,7 +332,7 @@
 
         <!--- Register Your Interest -->
         <div id="tab-5" class="tab-content">
-            <div class="register">
+            <div class="register bg-red">
                 <div class="clearfix">
                     <div class="bg-half left-half"></div>
                     <div class="bg-half right-half"></div>
@@ -350,7 +352,7 @@
                             <div class="SectionRegister tyt-forms form-horizontal" id="registerInterestSection">
 
                                 <!-- div class can be change, but you can't change the "for" attribute in the label -->
-                                <div class="FortunerFormWrapper">
+                                <div class="ViosFormWrapper">
                                     <div class="form-group">
                                         <label class="control-label" for="inputName">*Name</label>
                                         <div class="fl input-width-1">$$input:Name$$ $$validation:Name$$</div>
@@ -402,7 +404,7 @@
     
     <footer id="footer">
     	<div class="content">
-            <nav class="nav-bottom clearfix">
+            <nav class="nav-bottom">
                 <ul class="tabs">
                     <li class="tab-link current" data-tab="tab-1"><a href="#"><i class="icon icon-home"></i> <span>Home</span></a></li>
                     <li class="tab-link" data-tab="tab-2"><a href="#"><i class="icon icon-features"></i> <span>Key features</span></a></li>
